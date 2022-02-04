@@ -1,0 +1,328 @@
+img{
+    max-width: 100%;
+}
+ul{
+    margin-bottom: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.banner{
+    background-image: url(https://i.ibb.co/vkbWpTq/ia-200000019.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.472);
+    z-index: -1;
+}
+.head{
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.banner-left{}
+.banner-left img{
+    padding-top: 5px;
+    margin-left: 80px;
+}
+.banner-right{}
+.banner-right ul {
+    text-align: right;
+}
+.banner-right ul li {
+    display: inline-block;
+    padding: 25px 20px;
+    transition: .4s;
+    position: relative;
+    cursor: pointer;
+}
+.banner-right ul li a {
+    display: inline-block;
+    color: #fff;
+    transform: .4s all;
+    position: relative;
+}
+.banner-right ul li:hover a{
+    color: RGB(198,148,83);
+}
+
+.banner-right ul li:first-child a{
+    color: RGB(198,148,83);
+}
+.banner-right ul li::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: RGB(198,148,83);
+    transition: .4s !important;
+}
+.banner-right ul li:hover::before{
+    width: 100%;
+}
+.banner-right ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    padding-left: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    transition: .4s all ease-in-out;
+    transform: scaleY(0);
+    transform-origin: center;
+}
+.banner-right ul ul li{
+    display: block;
+    padding: 15px 0;
+}
+.banner-right ul ul li a{
+    display: block;
+    color: #000 !important;
+}
+.banner-right ul li:hover ul{
+    transform: scaleY(1);
+}
+.banner-right ul li ul li:hover::before{
+    width: 0;
+}
+.banner-right ul li ul li:hover{
+    background-color: #ddd;
+}
+.banner-right ul li ul li:hover a{
+    color: RGB(198,148,83) !important;
+}
+
+/* banner content */
+
+.banner-con{
+    padding: 250px 0;
+    color: #fff;
+    text-align: center;
+}
+.banner-con h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+.banner-con h4{
+    padding: 30px 0;
+    font-size: 30px;
+    position: relative;
+}
+.banner-con h4::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    top: 50px;
+    right: 398px;
+}
+.banner-con h4::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    margin-right: 15px;
+    background-color: #fff;
+    top: 50px;
+    left: 398px;
+}
+.banner-con a{
+    padding: 10px 30px;
+    background-color: RGB(198,148,83);
+    color: #fff;
+    border-radius: 20px;
+    transition: .4s all ease-in-out;
+}
+.banner-con a:hover{
+    background-color: #fff;
+    color: RGB(198,148,83);
+}
+
+/* service section */
+
+.service{
+    text-align: center;
+    padding: 70px;
+    background-color: RGB(248,248,248);
+}
+.ser-box{
+    background-color: #fff;
+    width: 24%;
+    margin-right: 17px;
+    box-sizing: border-box;
+    /* padding: 25px 20px; */
+}
+.ser-box:last-child{
+    margin-right: 0;
+}
+.ser-icon{
+    padding: 35px 0;
+}
+
+.ser-icon i{
+    font-size: 35px;
+    transition: .4s all ease-in-out;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border-radius: 50%;
+    padding-top: 21px;
+}
+.ser-content{}
+.ser-content h4{
+    font-weight: 600;
+}
+.ser-content p{
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    padding-top: 15px;
+}
+.ser-button{
+    padding: 50px 0;
+}
+.ser-button a{
+    padding: 10px 30px;
+    background-color: RGB(198,148,83);
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    transition: .4s all ease-in-out;
+}
+
+.ser-box:hover{
+    background-color: #ddd;
+}
+.ser-box:hover .ser-icon i{
+    transform: rotateY(360deg);
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    padding-top: 21px;
+}
+.ser-box:hover .ser-button a{
+    background-color: #fff;
+    color: RGB(198,148,83);
+}
+.ser-box .ser-button a:hover{
+    transform: translateY(10px);
+    color: #fff;
+    background-color: #000;
+}
+
+
+/* video content */
+
+.video{
+    background-color: RGB(248,248,248);
+    padding-top: 50px;
+    height: 650px;
+}
+.video-top{}
+.video-top iframe{
+    max-width: 100%;
+}
+.video-bot{
+    padding-left: 30px;
+}
+.video-bot h1{
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.video-bot h1 span{
+    color: RGB(198,148,83);
+}
+.video-bot p{
+    line-height: 28px;
+}
+.video-bot details{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.video-bot a{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    margin: 20px 0;
+    box-sizing: content-box;
+    transition: .4s all ease-in-out;
+}
+.video-bot a:hover{
+    background-color: RGB(198,148,83);
+}
+
+
+/* contact section */
+
+.contact{
+    padding: 80px 0;
+    background-color: RGB(248,248,248);
+    background-image: url(https://i.ibb.co/8XgpwTt/ia-200000022.jpg);
+    background-repeat: no-repeat;
+    background-position:  center right;
+    background-size: cover;
+}
+.contact-right p{
+    padding: 30px 0;
+    width: 50%;
+}
+.contact-right input{
+    padding: 10px;
+}
+.w100{
+    width: 50%;
+    margin-top: 10px;
+    border: none;
+}
+.pad{
+    height: 200px;
+}
+.contact-right button{
+    padding: 10px 20px;
+    background-color: RGB(198,148,83);
+    border: none;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+
+/* footer section */
+
+.footer{
+    background-color: RGB(109,109,109);
+    color: #ddd;
+    margin-top: 0;
+}
+.footer p{
+    padding: 15px 0;
+}
+.footer-menu{
+    text-align: right;
+}
+.footer-menu ul{}
+.footer-menu ul li{
+    display: inline-block;
+    padding: 15px 20px;
+}
+.footer-menu ul li i{
+    font-size: 22px;
+}
